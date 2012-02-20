@@ -6,7 +6,7 @@ Source0: %{name}-%{version}.tar.bz2
 Group: Communications
 License: GPLv2+
 
-BuildRequires: pkgconfig(ticonv) pkgconfig(libusb) pkgconfig(tifiles2) pkgconfig(ticalcs2) pkgconfig(ticonv)
+BuildRequires: pkgconfig(libusb) pkgconfig(tifiles2) pkgconfig(ticalcs2) pkgconfig(ticonv)
 BuildRequires: glade pkgconfig(libglade-2.0)
 Requires: xdg-utils >= 1.0.0
 Summary: TiLP is a TI<->PC linking program
@@ -73,9 +73,9 @@ update-mime-database %{_datadir}/mime > /dev/null 2>&1 || :
 update-desktop-database %{_datadir}/applications > /dev/null 2>&1 || :
 
 %files
-/usr/bin/tilp
+%{_bindir}/tilp
 %{_mandir}/man1/tilp*
-/usr/share/tilp2
+%{_datadir}/tilp2
 %{_datadir}/applications/lpg-tilp.desktop
 %{_datadir}/mime/packages/tilp.xml
 %{_datadir}/locale/fr/LC_MESSAGES/*.mo
