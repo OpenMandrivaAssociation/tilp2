@@ -74,7 +74,7 @@ update-desktop-database %{_datadir}/applications > /dev/null 2>&1 || :
 
 %files
 %{_bindir}/tilp
-%{_mandir}/man1/tilp*
+#%{_mandir}/man1/tilp*
 %{_datadir}/tilp2
 %{_datadir}/applications/lpg-tilp.desktop
 %{_datadir}/mime/packages/tilp.xml
