@@ -1,8 +1,8 @@
 Name: tilp2
 Url: http://lpg.ticalc.org/prj_tilp
-Version: 1.15
+Version: 1.16
 Release: 1
-Source0: %{name}-%{version}.tar.bz2
+Source0: http://downloads.sourceforge.net/project/tilp/tilp2-linux/tilp2-1.16/%{name}-%{version}.tar.bz2
 Group: Communications
 License: GPLv2+
 
@@ -74,8 +74,17 @@ update-desktop-database %{_datadir}/applications > /dev/null 2>&1 || :
 
 %files
 %{_bindir}/tilp
-#%{_mandir}/man1/tilp*
+#% {_mandir}/man1/tilp*
 %{_datadir}/tilp2
 %{_datadir}/applications/lpg-tilp.desktop
 %{_datadir}/mime/packages/tilp.xml
 %{_datadir}/locale/fr/LC_MESSAGES/*.mo
+
+
+%changelog
+* Mon Feb 20 2012 Alexander Khrukin <akhrukin@mandriva.org> 1.15-1
++ Revision: 778212
+- test build without man
+- files section fix
+- imported package tilp2
+
