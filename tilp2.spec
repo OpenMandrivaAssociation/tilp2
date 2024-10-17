@@ -1,5 +1,5 @@
 Name: tilp2
-Url: http://lpg.ticalc.org/prj_tilp
+Url: https://lpg.ticalc.org/prj_tilp
 Version: 1.16
 Release: 2
 Source0: http://downloads.sourceforge.net/project/tilp/tilp2-linux/tilp2-1.16/%{name}-%{version}.tar.bz2
